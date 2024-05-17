@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Dev Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Web Dev Portfolio</h1>
+        <nav>
+            <div class="tab-container">
+                <div class="tab">
+                    <button class="tablinks" onclick="scrollToSection('about')">About me</button>
+                    <button class="tablinks" onclick="scrollToSection('projects')">Projects</button>
+                    <button class="tablinks" onclick="scrollToSection('contact')">Contact</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="tabcontent active">
+            <h2>About Me</h2>
+            <p>Hello! I'm a current student at Cal State University Fullerton.</p>
+            <p>Welcome to my website!</p>
+            <h3>Connect with me</h3>
+            <ul class="social-media">
+                <li><a href="https://twitter.com/bestjosh9201" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/joonsob" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/joshua-lee-226091148/" target="_blank">LinkedIn</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </section>
+
+        <section id="projects" class="tabcontent">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>TIC-TAC-TOE GAME</h3>
+                <img src="tic-tac-toe.jpg" alt="tic-tac-toe demo image">
+                <p>This is a simple tic-tac-toe game that tracks each move like chess.</p>
+                <a href="https://assignment2-gray-iota.vercel.app/" target="_blank">Live Demo</a> |
+                <a href="https://github.com/joonsob/assignment2.git" target="_blank">GitHub Repo</a>
+            </div>
+            <div class="project">
+                <h3>Wellfit web app</h3>
+                <p>This is a simple web application that is a start up about wellness and fitness.</p>
+                <a href="https://link-to-live-demo.com" target="_blank">Live Demo</a> |
+                <a href="https://github.com/joonsob/wellfit.git" target="_blank">GitHub Repo</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="contact" class="tabcontent">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Web Dev Portfolio</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

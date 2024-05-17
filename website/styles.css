@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav .tab-container {
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav .tab button {
+    padding: 10px 20px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav .tab button.active {
+    background: #555;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
