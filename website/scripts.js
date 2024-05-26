@@ -1,7 +1,7 @@
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({
-        behavior: 'smooth'
-    });
+function scrollToSection(sectionId) {{
+    var section = document.getElementById('sectionToScrollTo')
+    section.scrollIntoView({behavior: 'smooth'})
+    };
 
     // Update the active class on the buttons
     const tablinks = document.querySelectorAll('.tablinks');
